@@ -18,4 +18,4 @@ Welcome to the Playwright TypeScript Framework. This unique and comprehensive au
 
 This framework is ideal for QA professionals, developers, and business analysts looking to improve their testing practices and efficiency. It's equipped with utilities that simplify test creation and maintenance, allowing you to focus on writing your tests out of the box.
 
-Can get the complete framwork @ https://github.com/vasu31dev/playwright-ts-template?tab=readme-ov-file#run-tests-using-playwright-test-for-vscode-extension
+Can get the complete framwork @ https://github.com/vasu31dev/playwright-ts-template?tab=readme-ov-file#-elevate-your-automation-redefining-the-future-of-testing-where-precision-meets-efficiency
