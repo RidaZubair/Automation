@@ -5,7 +5,7 @@ import { InValidLogin, ValidLogin } from '@testdata/sauce-anaconda.org-test-data
 const userName = '#username';
 const password = '#password';
 const loginButton = '#logInButton';
-const errorMessage = "//div[@class='alert-box danger']";
+const errorMessage = "(//div[@class='alert-box danger'])[1]";
 const dashboardMessage = "//h2[normalize-space()='My Anaconda Landscape']";
 
 export async function loginWithValidCredentials(validCredentials = ValidLogin) {
