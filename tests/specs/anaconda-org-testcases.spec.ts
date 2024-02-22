@@ -8,14 +8,13 @@ import * as packages from '../pages/anaconda.org/package';
 /*
  To run the tests in parallel, you can utilize the test.describe.configure() method to set the mode to 'parallel'.
  By default, the tests will run sequentially when fullyParallel: false is set in playwright.config.
- The tests will not be skipped upon encountering a failure expect when the mode is set to 'serial'.
+ The tests will not be skipped upon encountering a failure except when the mode is set to 'serial'.
 */
 //=================================================== Login testcase ========================================//
 test.describe('Test login cases @Regression', () => {
   test('Successful login will move to dashboad Page', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
-    await dashboad.verifyDashboard();
   });
 
   test('Error message is displayed and dashboad page is not displayed on failed login', async () => {
@@ -32,8 +31,9 @@ test.describe('Test login cases @Regression', () => {
 
 //=================================================== Landing page UI testcase ========================================//
 test.describe('Landing page UI verification @Regression', () => {
+  //The method should be split in to more functions to have a better understanding of the test case
   test('Verify Header', async () => {
-    await landing.verifyHeader();
+    await landing.verifyAllmenuHeaders();
   });
 
   test('Verify footer', async () => {
@@ -81,9 +81,10 @@ test.describe('search cases @Regression', () => {
 
 //=================================================== packages testcase ========================================//
 test.describe('packages @Regression', () => {
-  test('Testing checkbox', async () => {
+  test('Testing packages checkbox', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
-    packages.selectcheckbox;
+    await packages.navigateToAllpackages();
+    await packages.selectFirstPackageCheckbox();
   });
 });

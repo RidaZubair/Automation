@@ -13,6 +13,7 @@ import {
   switchToDefaultPage,
   waitForElementToBeStable,
 } from 'vasu-playwright-utils';
+import { Locator } from '@playwright/test';
 
 const signIn = () => '//a[normalize-space()="Sign In"]';
 const search = () => '#welcome-search-input';
@@ -156,40 +157,24 @@ export async function verifyFooterlinks() {
   */
 }
 
-export async function verifyHeader() {
+export async function verifyMenuHeader(headerMenu: string | Locator, headerText: string | Locator) {
+  await click(headerMenu);
+  await switchPage(2);
+  await expectElementToBeVisible(headerText);
+  await closePage();
+  await switchToDefaultPage();
+}
+
+export async function verifyAllmenuHeaders() {
   await gotoURL(URL, { timeout: MAX_TIMEOUT });
   await expectElementToBeVisible(logo);
   await click(logo);
 
-  await click(HeaderAbout);
-  await switchPage(2);
-  await expectElementToBeVisible(aboutTest);
-  await closePage();
-  await switchToDefaultPage();
-
-  await click(HeaderAnaconda);
-  await switchPage(2);
-  await expectElementToBeVisible(anacondaPricing);
-  await closePage();
-  await switchToDefaultPage();
-
-  await click(HeaderHelp);
-  await switchPage(2);
-  await expectElementToBeVisible(HelpTest);
-  await closePage();
-  await switchToDefaultPage();
-
-  await click(HeaderDownloadAnaconda);
-  await switchPage(2);
-  await expectElementToBeVisible(anacondadistribution);
-  await closePage();
-  await switchToDefaultPage();
-
-  await click(HeaderAnacondaCloud);
-  await switchPage(2);
-  await expectElementToBeVisible(anacondacloudtext);
-  await closePage();
-  await switchToDefaultPage();
+  await verifyMenuHeader(HeaderAbout, aboutTest);
+  await verifyMenuHeader(HeaderAnaconda, anacondaPricing);
+  await verifyMenuHeader(HeaderHelp, HelpTest);
+  await verifyMenuHeader(HeaderDownloadAnaconda, anacondadistribution);
+  await verifyMenuHeader(HeaderAnacondaCloud, anacondacloudtext);
 }
 
 export async function UI() {
