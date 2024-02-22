@@ -1,9 +1,9 @@
 //import { click } from 'vasu-playwright-utils';
 import { click, clickAndNavigate, expectElementToHaveText } from 'vasu-playwright-utils';
 
-const packgesviewall = "(//*[@class='right']//a[@class='text-white'])[1]";
-const headerMessage = "(//strong[normalize-space()='packages'])[1]";
-const checkbox1 = "(//*[@id='repo-packages-table']//input[@name='package'])[1]";
+const packgesviewall = `//*[@class='title']//a[contains(@href,'/repo')]`;
+const headerMessage = `//h2//strong[normalize-space()='packages']`;
+const firstPackageCheckbox = `(//*[@id='repo-packages-table']//input[@name='package'])[1]`;
 //const checkall = "#checkbox";
 
 export async function navigateToAllpackages() {
@@ -11,7 +11,6 @@ export async function navigateToAllpackages() {
   await expectElementToHaveText(headerMessage, 'packages');
 }
 
-export async function selectcheckbox() {
-  await navigateToAllpackages();
-  await click(checkbox1);
+export async function selectFirstPackageCheckbox() {
+  await click(firstPackageCheckbox);
 }

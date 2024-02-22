@@ -9,7 +9,6 @@ import {
 
 const dashboard = "//h2[normalize-space()='My Anaconda Landscape']";
 const view = "//label[@data-toggle-submenu='view']/..";
-//const view = "label[data-toggle-submenu='view']";
 const landscape = "//a[normalize-space()='Landscape']";
 const favorites = "//a[contains(text(),'Favorites')]";
 const favoritesText = "(//strong[normalize-space()='favorites'])[1]";
