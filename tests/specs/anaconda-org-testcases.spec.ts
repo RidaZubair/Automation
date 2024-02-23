@@ -22,10 +22,16 @@ test.describe('Test login cases @Regression', () => {
     await LoginPage.loginWithInvalidCredentials();
   });
 
-  test('view in dashboad Page', async () => {
+  test('View dropdown in dashboad Page', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
     await dashboad.verifyViewDropdown();
+  });
+
+  test('Help dropdown in dashboad Page', async () => {
+    await landing.navigateToLoginPage();
+    await LoginPage.loginWithValidCredentials();
+    await dashboad.verifyHelpDropdown();
   });
 });
 
@@ -33,15 +39,17 @@ test.describe('Test login cases @Regression', () => {
 test.describe('Landing page UI verification @Regression', () => {
   //The method should be split in to more functions to have a better understanding of the test case
   test('Verify Header', async () => {
+    await landing.navigateToLandingPage();
     await landing.verifyAllmenuHeaders();
   });
 
   test('Verify footer', async () => {
+    await landing.navigateToLandingPage();
     await landing.verifyFooter();
-    await landing.verifyFooterlinks();
   });
 
   test('Testing UI', async () => {
+    await landing.navigateToLandingPage();
     await landing.UI();
   });
 });

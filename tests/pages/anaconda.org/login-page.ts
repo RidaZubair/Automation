@@ -6,7 +6,6 @@ const userName = '#username';
 const password = '#password';
 const loginButton = '#logInButton';
 const errorMessage = `//*[@class='alert-box danger']`;
-// const dashboardMessage = "//h2[normalize-space()='My Anaconda Landscape']";
 const dashboardMessage = () => getLocatorByRole('heading', { name: 'My Anaconda Landscape' });
 
 export async function loginWithValidCredentials(validCredentials = ValidLogin) {

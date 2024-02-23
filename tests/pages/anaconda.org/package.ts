@@ -4,7 +4,6 @@ import { click, clickAndNavigate, expectElementToHaveText } from 'vasu-playwrigh
 const packgesviewall = `//*[@class='title']//a[contains(@href,'/repo')]`;
 const headerMessage = `//h2//strong[normalize-space()='packages']`;
 const firstPackageCheckbox = `(//*[@id='repo-packages-table']//input[@name='package'])[1]`;
-//const checkall = "#checkbox";
 
 export async function navigateToAllpackages() {
   await clickAndNavigate(packgesviewall);
