@@ -95,4 +95,11 @@ test.describe('packages @Regression', () => {
     await packages.navigateToAllpackages();
     await packages.selectFirstPackageCheckbox();
   });
+
+  test('Testing packages Access', async () => {
+    await landing.navigateToLoginPage();
+    await LoginPage.loginWithValidCredentials();
+    await packages.navigateToAllpackages();
+    await packages.checkaccessfilter();
+  });
 });
