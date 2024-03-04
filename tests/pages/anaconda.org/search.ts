@@ -19,9 +19,9 @@ const messageForEmptytext = () => getLocatorByText('Search query is empty');
 const messageforlogintext = () => getLocatorByText('You must login to search private');
 const messageforNoResult = () => getLocatorByText('no items found for this search');
 const ResultTable = "(//div[@class='row'])[6]";
-
 const URL = 'https://anaconda.org';
 
+//===================================================== Function =======================================
 export async function SearchValidDataBeforLogin(searchdata = ValidSearch) {
   await gotoURL(URL);
   await fillAndEnter(searchbarBeforeLogin, searchdata.value, { timeout: 5000 });

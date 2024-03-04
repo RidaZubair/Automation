@@ -79,6 +79,7 @@ const pageAnacondadistributiontext = `//h1[normalize-space()='Free Download']`;
 const pageAnacondaPricingtext = `//h1[normalize-space()='Plans and Pricing']`;
 const pageHelpTest = '//h1';
 
+//===================================================== Function =======================================
 export async function navigateToLandingPage() {
   await gotoURL(URL, { timeout: MAX_TIMEOUT });
 }

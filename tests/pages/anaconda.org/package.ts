@@ -1,4 +1,3 @@
-//import { click } from 'vasu-playwright-utils';
 import {
   click,
   clickAndNavigate,
@@ -31,6 +30,7 @@ const pythoniconpackages = `(//*[@class='ca ca-pypi'])`;
 const condaiconpackages = `(//*[@class='ca ca-conda'])`;
 const riconpackages = `(//*[@class='ca ca-r'])`;
 
+//===================================================== Function =======================================
 export async function navigateToAllpackages() {
   await clickAndNavigate(packgesviewall);
   await expectElementToHaveText(headerMessage, 'packages');

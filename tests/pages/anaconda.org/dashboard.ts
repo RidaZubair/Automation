@@ -36,6 +36,7 @@ const docstitleTest = '//h1';
 const reportBug = `//a[normalize-space()='Report a bug']`;
 const reportbugHeadingText = `(//h1[normalize-space()='Report a Bug'])`;
 
+//===================================================== Function =======================================
 export async function verifyDashboard() {
   await expectElementToBeVisible(dashboard, { timeout: 1000 });
 }
