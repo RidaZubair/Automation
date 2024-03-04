@@ -5,6 +5,8 @@ import {
   expectElementToBeHidden,
   expectElementToBeVisible,
   expectElementToHaveText,
+  getLocator,
+  getText,
   switchPage,
   switchToDefaultPage,
   waitForElementToBeStable,
@@ -14,6 +16,7 @@ import { Locator } from '@playwright/test';
 const dashboard = `//h2[normalize-space()='My Anaconda Landscape']`;
 //View
 const view = `//label[@data-toggle-submenu='view']/..`;
+const viewdropdown = () => getLocator(`//*[@data-submenu-item='view']//a`).count();
 const landscape = `//a[contains(text(),'Landscape')]`;
 const favorites = `//a[contains(text(),'Favorites')]`;
 const favoritesText = `(//strong[normalize-space()='favorites'])`;
@@ -53,7 +56,20 @@ export async function RedirectToItemsFromDropdown(
   await expectElementToHaveText(ItemRedirection, ItemHeaderText);
 }
 
-export async function verifyViewDropdown() {
+export async function ViewDropdown() {
+  await waitForElementToBeStable(view);
+  await click(view);
+  const ViewArray: string[] = ['Landscape', 'Favorites', 'Packages', 'Notebooks', 'Environments', 'Projects'];
+  const viewvalue = await viewdropdown();
+  for (let i = 1; i <= viewvalue; i++) {
+    const value = () => getLocator(`//*[@data-submenu-item='view']//a` + `[` + i + `]`);
+    const text = await getText(value());
+    console.log(text);
+    await expectElementToHaveText(value(), ViewArray[i - 1]);
+  }
+}
+
+export async function verifyViewDropdownRedirection() {
   await RedirectToItemsFromDropdown(view, landscape, dashboard, 'My Anaconda Landscape');
   await RedirectToItemsFromDropdown(view, favorites, favoritesText, 'favorites');
   await RedirectToItemsFromDropdown(view, packages, packageText, 'packages');
@@ -63,8 +79,8 @@ export async function verifyViewDropdown() {
 }
 
 export async function verifyHelpDropdown() {
-  //await RedirectToItemsFromDropdown(help, ViewDocs, docstitleTest, 'User guide');       //cant use this due to the exyernal link
   await RedirectToItemsFromDropdown(help, reportBug, reportbugHeadingText, 'Report a Bug');
+  //await RedirectToItemsFromDropdown(help, ViewDocs, docstitleTest, 'User guide');       //cant use this due to the exyernal link
   await waitForElementToBeStable(help);
   await click(help);
   await click(ViewDocs);

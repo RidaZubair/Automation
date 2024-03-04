@@ -22,13 +22,21 @@ test.describe('Test login cases @Regression', () => {
     await LoginPage.loginWithInvalidCredentials();
   });
 
-  test('View dropdown in dashboad Page', async () => {
+  //=================================================== Dashboard testcase ========================================//
+
+  test('Verify View dropdown', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
-    await dashboad.verifyViewDropdown();
+    await dashboad.ViewDropdown();
   });
 
-  test('Help dropdown in dashboad Page', async () => {
+  test('Verify the Redirection of View dropdown in dashboad Page', async () => {
+    await landing.navigateToLoginPage();
+    await LoginPage.loginWithValidCredentials();
+    await dashboad.verifyViewDropdownRedirection();
+  });
+
+  test('Verify the Redirection of Help dropdown in dashboad Page', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
     await dashboad.verifyHelpDropdown();
@@ -101,5 +109,12 @@ test.describe('packages @Regression', () => {
     await LoginPage.loginWithValidCredentials();
     await packages.navigateToAllpackages();
     await packages.checkaccessfilter();
+  });
+
+  test('Testing packages Type', async () => {
+    await landing.navigateToLoginPage();
+    await LoginPage.loginWithValidCredentials();
+    await packages.navigateToAllpackages();
+    await packages.checktypefilter();
   });
 });
