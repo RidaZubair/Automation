@@ -50,22 +50,22 @@ export async function checkfilter(
   await click(dropdown);
   await click(filterdropdown);
   const packages = () => getLocator(packagecountInTable);
-  const count = await packages().count();
-  let row = await rowcount();
-  if (row != 0) {
-    row = row - 1;
+  const packagescount = await packages().count();
+  let row_count = await rowcount();
+  if (row_count != 0) {
+    row_count = row_count - 1;
   }
   if (dropdown == `//*[@data-dropdown='Type']`) {
-    row = await rowcount();
+    row_count = await rowcount();
   }
-  if (row == count) {
+  if (row_count == packagescount) {
     console.log('pass');
-    console.log(row);
-    console.log(count);
+    console.log(row_count);
+    console.log(packagescount);
   } else {
     console.log('fail');
-    console.log(row);
-    console.log(count);
+    console.log(row_count);
+    console.log(packagescount);
   }
 }
 
