@@ -21,9 +21,10 @@ test.describe('Test login cases @Regression', () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithInvalidCredentials();
   });
+});
 
-  //=================================================== Dashboard testcase ========================================//
-
+//=================================================== Dashboard testcase ========================================//
+test.describe('Dashbord cases @Regression', () => {
   test('Verify View dropdown', async () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
@@ -34,6 +35,12 @@ test.describe('Test login cases @Regression', () => {
     await landing.navigateToLoginPage();
     await LoginPage.loginWithValidCredentials();
     await dashboad.verifyViewDropdownRedirection();
+  });
+
+  test('Verify help dropdown', async () => {
+    await landing.navigateToLoginPage();
+    await LoginPage.loginWithValidCredentials();
+    await dashboad.HelpDropdown();
   });
 
   test('Verify the Redirection of Help dropdown in dashboad Page', async () => {

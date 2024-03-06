@@ -66,6 +66,7 @@ export async function checkfilter(
     console.log('fail');
     console.log(row_count);
     console.log(packagescount);
+    throw new Error('Number of packages and filter count is not same');
   }
 }
 

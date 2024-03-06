@@ -31,6 +31,7 @@ const projectText = "//strong[normalize-space()='projects']";
 
 //Help
 const help = `//label[@data-toggle-submenu='help']/..`;
+const viewhelpdown = () => getLocator(`//*[@data-submenu-item='help']//a`).count();
 const ViewDocs = `//a[normalize-space()='View Docs']`;
 const docstitleTest = '//h1';
 const reportBug = `//a[normalize-space()='Report a bug']`;
@@ -77,6 +78,19 @@ export async function verifyViewDropdownRedirection() {
   await RedirectToItemsFromDropdown(view, notebook, notebooText, 'notebooks');
   await RedirectToItemsFromDropdown(view, environments, environmentsText, 'environments');
   await RedirectToItemsFromDropdown(view, projects, projectText, 'projects');
+}
+
+export async function HelpDropdown() {
+  await waitForElementToBeStable(help);
+  await click(help);
+  const HelpArray: string[] = ['View Docs', 'Report a bug'];
+  const helpvalue = await viewhelpdown();
+  for (let i = 1; i <= helpvalue; i++) {
+    const value = () => getLocator(`//*[@data-submenu-item='help']//a` + `[` + i + `]`);
+    const text = await getText(value());
+    console.log(text);
+    await expectElementToHaveText(value(), HelpArray[i - 1]);
+  }
 }
 
 export async function verifyHelpDropdown() {
