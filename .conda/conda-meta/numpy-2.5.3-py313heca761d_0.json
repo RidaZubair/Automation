@@ -1,0 +1,36 @@
+{
+  "build": "py313heca761d_0",
+  "build_number": 0,
+  "depends": [
+    "__osx >=12.1",
+    "blas * openblas",
+    "libcxx >=17",
+    "libopenblas >=0.3.31,<1.0a0",
+    "numpy-base 2.5.3 py313h23175f9_0",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+  "license_family": "OTHER",
+  "md5": "801fdd1b52d456ac6de2d26b1eb53454",
+  "name": "numpy",
+  "sha256": "bb8c7cea7e1c4fef822a82af987c95aed453f4ad473a5d6b47c0b68e93e69444",
+  "size": 19841,
+  "subdir": "osx-arm64",
+  "timestamp": 1790074855810,
+  "version": "2.5.3",
+  "fn": "numpy-2.5.3-py313heca761d_0.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numpy-2.5.3-py313heca761d_0.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/numpy-2.5.3-py313heca761d_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/numpy-2.5.3-py313heca761d_0",
+    "type": 1
+  }
+}

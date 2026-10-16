@@ -1,0 +1,27 @@
+{
+  "build": "openblas",
+  "build_number": 0,
+  "depends": [],
+  "md5": "082557147829a904fa986cb86dd1e45a",
+  "name": "blas",
+  "sha256": "4fd46cbbcfd8eea36f4b5eee916c0b973d3e9cf19931b1e046930fa087798752",
+  "size": 9998,
+  "subdir": "osx-arm64",
+  "timestamp": 1628529248300,
+  "track_features": "nomkl",
+  "version": "1.0",
+  "fn": "blas-1.0-openblas.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/blas-1.0-openblas.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/blas-1.0-openblas",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/blas-1.0-openblas",
+    "type": 1
+  }
+}

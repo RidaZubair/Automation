@@ -1,0 +1,81 @@
+{
+  "build": "h7813bb4_6",
+  "build_number": 6,
+  "depends": [
+    "__osx >=12.1",
+    "libgfortran",
+    "libgfortran5 >=14.3.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "16cf0acf1bae89cb8ebca3dd191a79c9",
+  "name": "libopenblas",
+  "sha256": "e619586a8ac9bb362c48b331eb4f59cffaf809e98770a50c98dcd7ca498f1e4b",
+  "size": 5829282,
+  "subdir": "osx-arm64",
+  "timestamp": 1790689000736,
+  "version": "0.3.31",
+  "fn": "libopenblas-0.3.31-h7813bb4_6.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libopenblas-0.3.31-h7813bb4_6.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/libopenblas-0.3.31-h7813bb4_6",
+  "requested_specs": [],
+  "files": [
+    "lib/libblas.dylib",
+    "lib/libcblas.dylib",
+    "lib/liblapack.dylib",
+    "lib/libopenblas.0.dylib",
+    "lib/libopenblas.dylib",
+    "lib/libopenblasp-r0.3.31.dylib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libblas.dylib",
+        "path_type": "softlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "sha256_in_prefix": "7cef67065c10aaa5a63db44e7615f754a10b5f1c46672f8d6c213875c32ef5c8",
+        "size_in_bytes": 27280224
+      },
+      {
+        "_path": "lib/libcblas.dylib",
+        "path_type": "softlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "sha256_in_prefix": "7cef67065c10aaa5a63db44e7615f754a10b5f1c46672f8d6c213875c32ef5c8",
+        "size_in_bytes": 27280224
+      },
+      {
+        "_path": "lib/liblapack.dylib",
+        "path_type": "softlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "sha256_in_prefix": "7cef67065c10aaa5a63db44e7615f754a10b5f1c46672f8d6c213875c32ef5c8",
+        "size_in_bytes": 27280224
+      },
+      {
+        "_path": "lib/libopenblas.0.dylib",
+        "path_type": "softlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "sha256_in_prefix": "7cef67065c10aaa5a63db44e7615f754a10b5f1c46672f8d6c213875c32ef5c8",
+        "size_in_bytes": 27280224
+      },
+      {
+        "_path": "lib/libopenblas.dylib",
+        "path_type": "softlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "sha256_in_prefix": "7cef67065c10aaa5a63db44e7615f754a10b5f1c46672f8d6c213875c32ef5c8",
+        "size_in_bytes": 27280224
+      },
+      {
+        "_path": "lib/libopenblasp-r0.3.31.dylib",
+        "path_type": "hardlink",
+        "sha256": "ea3d433c95a2144ec75682f803f84039ed5261bc4273233b4450c080c0956ed2",
+        "size_in_bytes": 27280224
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/libopenblas-0.3.31-h7813bb4_6",
+    "type": 1
+  }
+}

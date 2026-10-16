@@ -1,0 +1,30 @@
+{
+  "build": "h09d7db9_2",
+  "build_number": 2,
+  "depends": [
+    "libgfortran5 15.2.0 hb654fa1_2"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "md5": "b29817755eb166eedc011c387eda472a",
+  "name": "libgfortran",
+  "sha256": "9eaf391d83698a3cd2b833820d5ffdc66332702c9f8a7626693d88c7a64b0cbe",
+  "size": 132595,
+  "subdir": "osx-arm64",
+  "timestamp": 1789120094073,
+  "version": "15.2.0",
+  "fn": "libgfortran-15.2.0-h09d7db9_2.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libgfortran-15.2.0-h09d7db9_2.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/libgfortran-15.2.0-h09d7db9_2",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/libgfortran-15.2.0-h09d7db9_2",
+    "type": 1
+  }
+}

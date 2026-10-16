@@ -1,0 +1,127 @@
+{
+  "build": "haa24f5a_0",
+  "build_number": 0,
+  "depends": [
+    "__osx >=12.1",
+    "aws-c-auth >=0.10.4,<0.10.5.0a0",
+    "aws-c-cal >=0.9.15,<0.9.16.0a0",
+    "aws-c-common >=0.14.5,<0.14.6.0a0",
+    "aws-c-http >=0.11.0,<0.11.1.0a0",
+    "aws-c-io >=0.27.6,<0.27.7.0a0",
+    "aws-checksums >=0.2.10,<0.2.11.0a0"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "01b632c51a0bb85d88963db2e4f6685f",
+  "name": "aws-c-s3",
+  "sha256": "c4d0fcb99d60cd7779b83436c2e4c017ba46cc7c005f0e3072a2769fe86ace30",
+  "size": 119270,
+  "subdir": "osx-arm64",
+  "timestamp": 1789989817390,
+  "version": "0.13.5",
+  "fn": "aws-c-s3-0.13.5-haa24f5a_0.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/aws-c-s3-0.13.5-haa24f5a_0.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/aws-c-s3-0.13.5-haa24f5a_0",
+  "requested_specs": [],
+  "files": [
+    "lib/libaws-c-s3.0unstable.dylib",
+    "lib/libaws-c-s3.1.0.0.dylib",
+    "lib/libaws-c-s3.dylib",
+    "include/aws/s3/exports.h",
+    "include/aws/s3/s3.h",
+    "include/aws/s3/s3_buffer_pool.h",
+    "include/aws/s3/s3_client.h",
+    "include/aws/s3/s3_endpoint_resolver.h",
+    "include/aws/s3/s3express_credentials_provider.h",
+    "lib/cmake/aws-c-s3/shared/aws-c-s3-targets-release.cmake",
+    "lib/cmake/aws-c-s3/shared/aws-c-s3-targets.cmake",
+    "lib/cmake/aws-c-s3/aws-c-s3-config.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libaws-c-s3.0unstable.dylib",
+        "path_type": "softlink",
+        "sha256": "b2837e1d93d2491673a214688be015365657014016fa50681cec900be6d33b7b",
+        "sha256_in_prefix": "cd096b0c27cb732912d0ff42bf7bc489e7e10a325b10c5fae9ce978cccd890c2",
+        "size_in_bytes": 316672
+      },
+      {
+        "_path": "lib/libaws-c-s3.1.0.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "b2837e1d93d2491673a214688be015365657014016fa50681cec900be6d33b7b",
+        "sha256_in_prefix": "03a6c5370293ae40759d334714610849e0e554b078cd062abd72b861fd914fae",
+        "size_in_bytes": 314944,
+        "file_mode": "binary",
+        "prefix_placeholder": "/Users/ec2-user/croot/aws-c-s3_1789989775457/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla"
+      },
+      {
+        "_path": "lib/libaws-c-s3.dylib",
+        "path_type": "softlink",
+        "sha256": "b2837e1d93d2491673a214688be015365657014016fa50681cec900be6d33b7b",
+        "sha256_in_prefix": "cd096b0c27cb732912d0ff42bf7bc489e7e10a325b10c5fae9ce978cccd890c2",
+        "size_in_bytes": 316672
+      },
+      {
+        "_path": "include/aws/s3/exports.h",
+        "path_type": "hardlink",
+        "sha256": "6db9f52ef6a887d8ff1d436e65e2702f2b8041f43adb531faa82701d426e3c9f",
+        "size_in_bytes": 826
+      },
+      {
+        "_path": "include/aws/s3/s3.h",
+        "path_type": "hardlink",
+        "sha256": "0c29feb1343c5cc659981d10d066a943bda502654f5c4ebbd788167b8f235211",
+        "size_in_bytes": 4287
+      },
+      {
+        "_path": "include/aws/s3/s3_buffer_pool.h",
+        "path_type": "hardlink",
+        "sha256": "3a6dd349af0944747864cf6b728321c8c2d8c440462cabf58bf41a1a7f608936",
+        "size_in_bytes": 9512
+      },
+      {
+        "_path": "include/aws/s3/s3_client.h",
+        "path_type": "hardlink",
+        "sha256": "17ad19a6c7893a2699fd7f70a4f25bb8201b01e771d0dfdc1de8a3a2825e8365",
+        "size_in_bytes": 84013
+      },
+      {
+        "_path": "include/aws/s3/s3_endpoint_resolver.h",
+        "path_type": "hardlink",
+        "sha256": "1ce131444f92c70a3e96bdb430a7e027f6e09962726754c007fa00f52d86291f",
+        "size_in_bytes": 696
+      },
+      {
+        "_path": "include/aws/s3/s3express_credentials_provider.h",
+        "path_type": "hardlink",
+        "sha256": "f799537bd3a21f2fae938477f881a34a7a64c3593dee53bf074a2fc50e98fc34",
+        "size_in_bytes": 3276
+      },
+      {
+        "_path": "lib/cmake/aws-c-s3/shared/aws-c-s3-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "074905145c45fdc879f321bfc068fdfd6fc7025f571d1c3cde52b8aabca3907b",
+        "size_in_bytes": 875
+      },
+      {
+        "_path": "lib/cmake/aws-c-s3/shared/aws-c-s3-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "35bb00f9560c2eb874a03c558f95b0f6cd07b1fc92e15b940cb26b631e6e5d87",
+        "size_in_bytes": 4305
+      },
+      {
+        "_path": "lib/cmake/aws-c-s3/aws-c-s3-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "c82e60fb7294608cfdb379a5f1737122871583c6ed9f9d00ae81411175e4ca13",
+        "size_in_bytes": 624
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/aws-c-s3-0.13.5-haa24f5a_0",
+    "type": 1
+  }
+}

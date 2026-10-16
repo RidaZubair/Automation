@@ -1,0 +1,70 @@
+{
+  "build": "h4714345_1",
+  "build_number": 1,
+  "constrains": [
+    "openmp 22.1.2|22.1.2.*"
+  ],
+  "depends": [
+    "__osx >=12.1"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "df4e7a6683f56970d08bbba16299f2c7",
+  "name": "llvm-openmp",
+  "sha256": "8d474e9f232e4189c5912cc527a2f0587292f6e636033f6189c11b921d0e1ee3",
+  "size": 302088,
+  "subdir": "osx-arm64",
+  "timestamp": 1779209395121,
+  "version": "22.1.2",
+  "fn": "llvm-openmp-22.1.2-h4714345_1.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/llvm-openmp-22.1.2-h4714345_1.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/llvm-openmp-22.1.2-h4714345_1",
+  "requested_specs": [],
+  "files": [
+    "include/omp-tools.h",
+    "include/omp.h",
+    "include/ompt.h",
+    "include/ompx.h",
+    "lib/libomp.dylib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/omp-tools.h",
+        "path_type": "hardlink",
+        "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+        "size_in_bytes": 52077
+      },
+      {
+        "_path": "include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "5974470842520cea4bc50136e2329bbf4e36ba928d317e86f7def2ba1752d3d4",
+        "size_in_bytes": 26072
+      },
+      {
+        "_path": "include/ompt.h",
+        "path_type": "hardlink",
+        "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+        "size_in_bytes": 52077
+      },
+      {
+        "_path": "include/ompx.h",
+        "path_type": "hardlink",
+        "sha256": "a84d0460771cec5695ce16fc8698bddf3276a1908a372087b3f6aa60782acf88",
+        "size_in_bytes": 7720
+      },
+      {
+        "_path": "lib/libomp.dylib",
+        "path_type": "hardlink",
+        "sha256": "56167dc20dc51bef3663ed157e198b7513806b1bf6c94bcace0b50fa4d4b31ca",
+        "size_in_bytes": 903952
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/llvm-openmp-22.1.2-h4714345_1",
+    "type": 1
+  }
+}

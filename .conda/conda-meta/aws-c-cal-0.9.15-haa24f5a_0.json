@@ -1,0 +1,142 @@
+{
+  "build": "haa24f5a_0",
+  "build_number": 0,
+  "depends": [
+    "__osx >=12.1",
+    "aws-c-common >=0.14.5,<0.14.6.0a0"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "1a3066a18929e9190e530f69ae59a46f",
+  "name": "aws-c-cal",
+  "sha256": "27bd3b7b01c20b3a05312a470a7d85c2505593028d4bdd010e2dc8d4a6264f75",
+  "size": 43554,
+  "subdir": "osx-arm64",
+  "timestamp": 1789970906569,
+  "version": "0.9.15",
+  "fn": "aws-c-cal-0.9.15-haa24f5a_0.conda",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/aws-c-cal-0.9.15-haa24f5a_0.conda",
+  "channel": "https://repo.anaconda.com/pkgs/main/",
+  "extracted_package_dir": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/aws-c-cal-0.9.15-haa24f5a_0",
+  "requested_specs": [],
+  "files": [
+    "lib/libaws-c-cal.1.0.0.dylib",
+    "lib/libaws-c-cal.dylib",
+    "lib/cmake/aws-c-cal/shared/aws-c-cal-targets-release.cmake",
+    "lib/cmake/aws-c-cal/shared/aws-c-cal-targets.cmake",
+    "lib/cmake/aws-c-cal/modules/Findcrypto.cmake",
+    "lib/cmake/aws-c-cal/aws-c-cal-config.cmake",
+    "include/aws/cal/cal.h",
+    "include/aws/cal/ecc.h",
+    "include/aws/cal/ed25519.h",
+    "include/aws/cal/exports.h",
+    "include/aws/cal/hash.h",
+    "include/aws/cal/hkdf.h",
+    "include/aws/cal/hmac.h",
+    "include/aws/cal/rsa.h",
+    "include/aws/cal/symmetric_cipher.h"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libaws-c-cal.1.0.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "0d150428294db222c89eab1291b0db3c6a3e7cb07a1890f4a910a4119175591f",
+        "sha256_in_prefix": "8f3ad79763c718cda3f43f5485d9ad2e0fad1b979917a892b4f1c8a42bb26532",
+        "size_in_bytes": 122512,
+        "file_mode": "binary",
+        "prefix_placeholder": "/Users/ec2-user/croot/aws-c-cal_1789970852037/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl"
+      },
+      {
+        "_path": "lib/libaws-c-cal.dylib",
+        "path_type": "softlink",
+        "sha256": "0d150428294db222c89eab1291b0db3c6a3e7cb07a1890f4a910a4119175591f",
+        "sha256_in_prefix": "2cefd35fbf64a563ba93c6b2910506d74ddfd6cfdacc6b93f6598abeab6a8abd",
+        "size_in_bytes": 123120
+      },
+      {
+        "_path": "lib/cmake/aws-c-cal/shared/aws-c-cal-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "9f736a9aca3052dd6b2ab34d3d0da04e15a55e8d5798fd698389e5fe99855695",
+        "size_in_bytes": 879
+      },
+      {
+        "_path": "lib/cmake/aws-c-cal/shared/aws-c-cal-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "e6992af1698f502b16296274f85968af8996b0a77d08ae74e720d82d71caa68b",
+        "size_in_bytes": 4340
+      },
+      {
+        "_path": "lib/cmake/aws-c-cal/modules/Findcrypto.cmake",
+        "path_type": "hardlink",
+        "sha256": "b2c6d8d5eb8afebb97bc09de6e294907511e2334e22bcfaa673c608456779fed",
+        "size_in_bytes": 4392
+      },
+      {
+        "_path": "lib/cmake/aws-c-cal/aws-c-cal-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "e58158d8aa5800d301848a445947d873c775ab7bfecddbda3fccd825cf6c72ff",
+        "size_in_bytes": 1043
+      },
+      {
+        "_path": "include/aws/cal/cal.h",
+        "path_type": "hardlink",
+        "sha256": "301f724813b9bce45dfd42831e45ef8129f52ba83eb85683fe17c67d6a54a6e7",
+        "size_in_bytes": 1782
+      },
+      {
+        "_path": "include/aws/cal/ecc.h",
+        "path_type": "hardlink",
+        "sha256": "a1b0447b4bb065abf26fd905afecfc58667b44ce450a94ac6fc0d7fa99fd733c",
+        "size_in_bytes": 8457
+      },
+      {
+        "_path": "include/aws/cal/ed25519.h",
+        "path_type": "hardlink",
+        "sha256": "2c795adc5ffe79c4472d19b971e029d6f7a2f9146fde512f9fafdacd820cd087",
+        "size_in_bytes": 3136
+      },
+      {
+        "_path": "include/aws/cal/exports.h",
+        "path_type": "hardlink",
+        "sha256": "3a5e05d052fb792d374c41523838b78f7c4c16110160747b69a10dfa58ee7860",
+        "size_in_bytes": 919
+      },
+      {
+        "_path": "include/aws/cal/hash.h",
+        "path_type": "hardlink",
+        "sha256": "9b65bab673bc5a6b08ab9bc3b89aeb0894c0824c7e8dfe74527be1ebff91b46b",
+        "size_in_bytes": 6161
+      },
+      {
+        "_path": "include/aws/cal/hkdf.h",
+        "path_type": "hardlink",
+        "sha256": "f0863762f82519b87a9216d0c3fab3a74c46ead350bb8729051aa502aadbc40e",
+        "size_in_bytes": 1403
+      },
+      {
+        "_path": "include/aws/cal/hmac.h",
+        "path_type": "hardlink",
+        "sha256": "07ca217af4b39ef70a08bf6486b8ffc0bd2984efc1e5761860689172e244f5ec",
+        "size_in_bytes": 4442
+      },
+      {
+        "_path": "include/aws/cal/rsa.h",
+        "path_type": "hardlink",
+        "sha256": "70266875eaf148f7d819ced4dd8c2ce4790c6b20a6bcbfa02e8b2ef7afeb7052",
+        "size_in_bytes": 5939
+      },
+      {
+        "_path": "include/aws/cal/symmetric_cipher.h",
+        "path_type": "hardlink",
+        "sha256": "4fab73d600934f340973cb701f282527f422a9bf51674cd2b116e669afa857ec",
+        "size_in_bytes": 11885
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/ridazubair/Library/Caches/rattler/cache/pkgs/aws-c-cal-0.9.15-haa24f5a_0",
+    "type": 1
+  }
+}
