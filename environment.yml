@@ -1,0 +1,8 @@
+# Notebooks in this folder share one conda environment.
+# The environment is built in .conda/ the first time a notebook starts.
+channels:
+  - defaults
+dependencies:
+  - ipykernel
+  - pandas
+prefix: "/Users/ridazubair/Repositories/Automation/.conda"
